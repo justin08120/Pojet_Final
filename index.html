@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <title>Page de test</title>
-    <link rel="stylesheet" href="../main.css"
-</head>
-
-<body>
-    <h1>Coucou comment ça va ?</h1>
-</body>
-
-</html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tableau de bord</title>
+      <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <header>
+          <button class="logout" onclick="logout()">Déconnexion</button>
+      </header>
+      <div class="table-container">
+          <h2>Informations</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th>ID</th>
+                      <th>État</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <script>
+          function logout() {
+              window.location.href = 'index.html';
+          }
+      </script>
+  </body>
+  </html>
