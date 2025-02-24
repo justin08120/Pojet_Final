@@ -15,17 +15,20 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: center;
+    width: 30%;
 }
 
-input, button {
+input, button, label {
     display: block;
-    width: 100%;
+    width: 93%;
     margin: 10px 0;
     padding: 10px;
+    text-align: center;
 }
 
 .table-container {
     text-align: center;
+    width: 90%;
 }
 
 table {
@@ -52,4 +55,5 @@ th, td {
     color: white;
     border: none;
     cursor: pointer;
+    width: 99%;
 }
