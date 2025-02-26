@@ -36,7 +36,8 @@ if(isset($_POST['connexion'])){
           //on ouvre la session avec $_SESSION:
           //la session peut être appelée différemment et son contenu aussi peut être autre chose que le pseudo
           $_SESSION['pseudo'] = $Pseudo;
-          echo "Vous êtes à présent connecté !";
+          header("index.html"); // Redirection du navigateur
+          exit;//on affiche pas le reste de la page pour faire une redirection parfaite et sans erreurs;
         }
       }
     }
@@ -54,10 +55,3 @@ type="password" sera des petits points noir (texte caché)
 type="submit" sera un bouton pour valider le formulaire
 name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, pour le code PHP (récupéré via $_POST["nom de l'input"] en PHP)
  -->
- <form action="connexion.php" method="post">
-  Pseudo: <input type="text" name="pseudo" />
-  <br />
-  Mot de passe: <input type="password" name="mdp" />
-  <br />
-  <input type="submit" name="connexion" value="Connexion" />
-</form>
